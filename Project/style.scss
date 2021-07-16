@@ -1,0 +1,212 @@
+@import 'partials/typography';
+@import 'partials/color';
+
+
+* {box-sizing: border-box}
+
+#css-zen-garden {
+    margin: 0;
+    margin-top: 2rem;
+    margin-bottom: 20rem;
+    width: 100%;
+    padding: 1rem ;
+    padding-left: 1.5rem;
+    background: url(image/background.svg) top center no-repeat fixed;
+    background-size: auto 100vmax;
+    font-family: $primary-font;
+    color: $color-2;
+    
+    .intro, .main {
+        background: $color-1;
+        padding: 1.5rem;
+        max-width: 35em;
+        margin: auto;
+        width: 100%;
+    }
+
+    .intro{
+        margin-bottom: 0;
+        border-radius: 8px 8px 0 0;
+        header {   
+            background-color: $color-4;
+            padding: .5rem 1rem;
+            margin-left: -3rem;
+            border-bottom: solid 5px $color-2;    
+            border-right: solid 5px $color-2;    
+            border-radius: 8px;
+            background: url(image/bird.png) center right no-repeat, $color-4;
+            background-size: 5rem;
+            h1 {
+                margin-top: .5rem;
+                margin-bottom: 0;
+                padding-right: 1rem;
+                color: $color-2;
+                font-family: $secondary-font;
+                font-weight: 900;
+                font-size: 150%;
+            }
+            h2 {
+                font-size: 70%;
+                margin-top: 0;
+                margin-bottom: .5rem;
+            }
+        }
+        .summary {
+            p:first-child {
+                font-size: 85%;
+                font-style: italic;
+                text-align: center;
+                margin-bottom: 2rem;
+                color: $color-4;
+            }
+            p:last-child{
+                text-align: right;
+                font-weight: bold;
+                margin-bottom: 2rem;
+                a, a:visited {
+                    color: $color-4;
+                    font-weight: normal;
+                    text-decoration: none;
+                }
+                a:hover{
+                    color: $color-4;
+                    background-color: $color-2;
+                }
+            }
+        }
+        .preamble {
+            color: $color-4;
+            margin: 1rem;
+            background: $color-2;
+            padding: 1rem;
+            border-radius: 8px;
+            border-top: solid 1px $color-4;
+            border-left: solid 1px $color-4;
+            border-bottom: solid 5px $color-4;    
+            border-right: solid 5px $color-4; 
+            border-radius: 8px;  
+            p {
+                font-style: italic;
+            }
+        }
+    }
+    .main {
+        border-radius: 0 0 8px 8px;
+        border-bottom: 5px solid $color-2;
+        margin-bottom: 5rem;
+        h3 {
+            background-color: $color-4;
+            border-bottom: solid 5px $color-2;    
+            border-right: solid 5px $color-2;   
+            padding: 1rem;
+            border-radius: 5px;
+            margin-top: 3rem;
+            font-style: italic;
+        }
+
+        p {
+            padding-left: 1rem;
+        }
+        div { 
+            a, a:visited {
+                color: $color-2;
+                text-underline-position: under;
+            }
+            a:hover{
+                color: $color-4;
+                background-color: $color-2; 
+            }
+        }
+    }
+    footer {
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
+        justify-content: space-around;
+        text-align: center;
+        a {
+            color: $color-5;
+            background-color: $color-4;
+            text-decoration: none;
+            font-weight: bold;
+            font-family: $secondary-font;
+            border-radius: 50%;
+            padding: 1.5rem;
+            margin: .5rem;
+            border-bottom: solid 5px $color-2;    
+            border-right: solid 5px $color-2;    
+        }
+        a:hover{
+            color: $color-4;
+            background-color: $color-2;
+            border-bottom: solid 5px $color-4;    
+            border-right: solid 5px $color-4;    
+        }
+    }
+    .sidebar {
+        background-color: $color-2;
+        color: $color-4;
+        padding: .5rem 1rem;
+        margin-left: 3rem;
+        border-bottom: solid 5px $color-4;    
+        border-right: solid 5px $color-4;    
+        border-radius: 8px;
+
+        li {
+            list-style-type: square;
+            margin-bottom: 1rem;
+        }
+        a, a:visited {
+            color: $color-4;
+            text-decoration: none;
+        }
+        a:hover{
+            color: $color-4;
+            background-color: $color-2;
+        }
+    }
+}
+
+
+// MEDIUM - LARGE
+@media only screen and (min-width: 32em){
+    
+    #css-zen-garden {
+        .page-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 3fr 2fr;
+            grid-template-rows: auto auto;
+            position: relative;
+            max-width: 65em;
+            margin: auto;
+        }
+        .intro, .main {
+            grid-column-start: 2;
+            justify-self: right;
+            margin: 0;
+        }
+        .sidebar {
+            grid-column-start: 3;
+            grid-row-start: 1;
+            margin-left: 0;
+            font-size: 80%;
+            position: absolute;
+            max-width: 90%;
+            background: $color-2;
+            color: $color-4;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            a {       
+                color: $color-4;
+
+                .design-name {
+                    font-family: $primary-font;
+                }
+            }
+        }
+        
+
+    }
+}
