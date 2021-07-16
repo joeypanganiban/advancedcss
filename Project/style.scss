@@ -12,7 +12,7 @@
     padding: 1rem ;
     padding-left: 1.5rem;
     background: url(image/background.svg) top center no-repeat fixed;
-    background-size: auto 100vmax;
+    background-size: auto 120%;
     font-family: $primary-font;
     color: $color-2;
     
@@ -27,10 +27,15 @@
     .intro{
         margin-bottom: 0;
         border-radius: 8px 8px 0 0;
+        &::before {
+            content: " ";
+            background: url(image/bird.png) center right no-repeat;
+        }
         header {   
             background-color: $color-4;
             padding: .5rem 1rem;
-            margin-left: -3rem;
+            margin-left: -2.5rem;
+            margin-right: -1rem;
             border-bottom: solid 5px $color-2;    
             border-right: solid 5px $color-2;    
             border-radius: 8px;

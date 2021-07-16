@@ -11,12 +11,12 @@
   padding: 1rem;
   padding-left: 1.5rem;
   background: url(image/background.svg) top center no-repeat fixed;
-  background-size: auto 100vmax;
+  background-size: auto 120%;
   font-family: "Mulish";
   color: #086788;
 }
 #css-zen-garden .intro, #css-zen-garden .main {
-  background: #06afd5;
+  background: #C9F3FD;
   padding: 1.5rem;
   max-width: 35em;
   margin: auto;
@@ -26,14 +26,19 @@
   margin-bottom: 0;
   border-radius: 8px 8px 0 0;
 }
+#css-zen-garden .intro::before {
+  content: " ";
+  background: url(image/bird.png) center right no-repeat;
+}
 #css-zen-garden .intro header {
-  background-color: #fff1d0;
+  background-color: #dba526;
   padding: 0.5rem 1rem;
-  margin-left: -3rem;
+  margin-left: -2.5rem;
+  margin-right: -1rem;
   border-bottom: solid 5px #086788;
   border-right: solid 5px #086788;
   border-radius: 8px;
-  background: url(image/bird.png) center right no-repeat, #fff1d0;
+  background: url(image/bird.png) center right no-repeat, #dba526;
   background-size: 5rem;
 }
 #css-zen-garden .intro header h1 {
@@ -55,7 +60,7 @@
   font-style: italic;
   text-align: center;
   margin-bottom: 2rem;
-  color: #fff1d0;
+  color: #dba526;
 }
 #css-zen-garden .intro .summary p:last-child {
   text-align: right;
@@ -63,24 +68,24 @@
   margin-bottom: 2rem;
 }
 #css-zen-garden .intro .summary p:last-child a, #css-zen-garden .intro .summary p:last-child a:visited {
-  color: #fff1d0;
+  color: #dba526;
   font-weight: normal;
   text-decoration: none;
 }
 #css-zen-garden .intro .summary p:last-child a:hover {
-  color: #fff1d0;
+  color: #dba526;
   background-color: #086788;
 }
 #css-zen-garden .intro .preamble {
-  color: #fff1d0;
+  color: #dba526;
   margin: 1rem;
   background: #086788;
   padding: 1rem;
   border-radius: 8px;
-  border-top: solid 1px #fff1d0;
-  border-left: solid 1px #fff1d0;
-  border-bottom: solid 5px #fff1d0;
-  border-right: solid 5px #fff1d0;
+  border-top: solid 1px #dba526;
+  border-left: solid 1px #dba526;
+  border-bottom: solid 5px #dba526;
+  border-right: solid 5px #dba526;
   border-radius: 8px;
 }
 #css-zen-garden .intro .preamble p {
@@ -92,7 +97,7 @@
   margin-bottom: 5rem;
 }
 #css-zen-garden .main h3 {
-  background-color: #fff1d0;
+  background-color: #dba526;
   border-bottom: solid 5px #086788;
   border-right: solid 5px #086788;
   padding: 1rem;
@@ -108,7 +113,7 @@
   text-underline-position: under;
 }
 #css-zen-garden .main div a:hover {
-  color: #fff1d0;
+  color: #dba526;
   background-color: #086788;
 }
 #css-zen-garden footer {
@@ -120,7 +125,7 @@
 }
 #css-zen-garden footer a {
   color: #DD1C1A;
-  background-color: #fff1d0;
+  background-color: #dba526;
   text-decoration: none;
   font-weight: bold;
   font-family: "Red Rose";
@@ -131,18 +136,18 @@
   border-right: solid 5px #086788;
 }
 #css-zen-garden footer a:hover {
-  color: #fff1d0;
+  color: #dba526;
   background-color: #086788;
-  border-bottom: solid 5px #fff1d0;
-  border-right: solid 5px #fff1d0;
+  border-bottom: solid 5px #dba526;
+  border-right: solid 5px #dba526;
 }
 #css-zen-garden .sidebar {
   background-color: #086788;
-  color: #fff1d0;
+  color: #dba526;
   padding: 0.5rem 1rem;
   margin-left: 3rem;
-  border-bottom: solid 5px #fff1d0;
-  border-right: solid 5px #fff1d0;
+  border-bottom: solid 5px #dba526;
+  border-right: solid 5px #dba526;
   border-radius: 8px;
 }
 #css-zen-garden .sidebar li {
@@ -150,11 +155,11 @@
   margin-bottom: 1rem;
 }
 #css-zen-garden .sidebar a, #css-zen-garden .sidebar a:visited {
-  color: #fff1d0;
+  color: #dba526;
   text-decoration: none;
 }
 #css-zen-garden .sidebar a:hover {
-  color: #fff1d0;
+  color: #dba526;
   background-color: #086788;
 }
 
@@ -180,14 +185,14 @@
     position: absolute;
     max-width: 90%;
     background: #086788;
-    color: #fff1d0;
+    color: #dba526;
     justify-content: center;
     justify-items: center;
     align-items: center;
     align-content: center;
   }
   #css-zen-garden .sidebar a {
-    color: #fff1d0;
+    color: #dba526;
   }
   #css-zen-garden .sidebar a .design-name {
     font-family: "Mulish";
